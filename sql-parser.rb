@@ -6,6 +6,7 @@ class SqlParser < Formula
 
   def install
     system "make"
+    system "mkdir", "#{prefix}/lib"
     system "make", "install", "INSTALL=#{prefix}"
   end
 end
